@@ -1,23 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>click demo</title>
-
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Demo</title>
 </head>
 <body>
+  <h1>Welcome to Cybersecurity Awareness!</h1>
+  <p>This is an example of how a simple script can trigger actions in your browser.</p>
 
-
-  <a href="popupex.html" onclick="return popitup('popupex.html')"
-        >Link to popup</a>
-<script>
-function popitup(url) {
-        newwindow=window.open(url,'name','height=200,width=150');
-        if (window.focus) {newwindow.focus()}
-        return false;
-    }
-</script>
-
+  <script>
+    // Display a harmless pop-up
+    alert("You have been hacked! Just kidding — this is a demo to show how scripts work.");
+  </script>
 </body>
 </html>
+
