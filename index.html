@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>click demo</title>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+
+  <a href="popupex.html" onclick="return popitup('popupex.html')"
+        >Link to popup</a>
+<script>
+function popitup(url) {
+        newwindow=window.open(url,'name','height=200,width=150');
+        if (window.focus) {newwindow.focus()}
+        return false;
+    }
+</script>
+
+</body>
+</html>
